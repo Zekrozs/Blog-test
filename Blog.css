@@ -3,11 +3,14 @@ margin: 0;
 box-sizing: border-box;}
 
 
-
+ 
 .tag{font-weight: 800;}
+
 img{
     width: 100%;
 }
+
+
 
 body{
     font-family: 'Figtree', sans-serif;
@@ -30,14 +33,15 @@ body{
 
 .image-wrapper{
  width: 100%;  
- height: auto;    
+ height: clamp(15rem, 30vw, 20rem);    
   aspect-ratio: 16 / 9; 
    object-fit: cover;
 }
 
 .header-img {
-  height: auto;
-  border-radius: 1rem;
+  height: clamp(15rem, 100vw, 20rem);
+  object-fit: cover;
+  border-radius: 1.2rem;
   display: block;
   width: 100%;
 
@@ -80,9 +84,10 @@ body{
 /*cards*/
 .card{background-color: var(--white);
 padding-inline: 2rem ;
-padding-block: 2rem ;
-max-width: 36rem;
-border-radius: 1.3rem; border: solid 0.1rem black;
+padding-block: 2rem 0.1rem ;
+max-width: 32rem;
+
+border-radius: 1.6rem; border: solid 0.1rem black;
 box-shadow: 0.7rem 0.7rem }
 
 
