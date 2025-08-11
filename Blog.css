@@ -4,6 +4,7 @@ box-sizing: border-box;}
 
 
 
+.tag{font-weight: 800;}
 img{
     width: 100%;
 }
@@ -16,7 +17,7 @@ body{
      flex-direction: column;
      align-items: center; 
    min-height: 100vh; min-width: 100vw;
-    padding-inline: 1.6rem;
+    padding-inline: clamp(1rem, 2vw, 1.6rem);
    line-height: 2.2rem;
 }
 
@@ -26,15 +27,19 @@ body{
     --dark-grey: hsl(0, 0%, 7%)
 }
 
+
 .image-wrapper{
-  height: 20rem;
+ width: 100%;  
+ height: auto;    
+  aspect-ratio: 16 / 9; 
+   object-fit: cover;
 }
 
 .header-img {
-  height: 100%;
+  height: auto;
   border-radius: 1rem;
-  object-fit: cover;
   display: block;
+  width: 100%;
 
 }
 
@@ -74,8 +79,8 @@ body{
 
 /*cards*/
 .card{background-color: var(--white);
-padding-inline: 2rem 2rem;
-padding-block: 2rem 2rem;
+padding-inline: 2rem ;
+padding-block: 2rem ;
 max-width: 36rem;
 border-radius: 1.3rem; border: solid 0.1rem black;
 box-shadow: 0.7rem 0.7rem }
@@ -83,8 +88,8 @@ box-shadow: 0.7rem 0.7rem }
 
 
 
-/*tags*/
-.tag{font-weight: 800;}
+
+
 
 
 
@@ -115,9 +120,11 @@ box-shadow: 0.7rem 0.7rem }
 .avatar-img{width: 3.4rem;}
 
 
-@media (max-width: 600px){
+@media (max-width: 37.5em){
 
 body{line-height:1.5rem}
+
+
 
 .image-wrapper{
   height: 13rem;
@@ -153,7 +160,7 @@ body{line-height:1.5rem}
 .avatar .avatar-img{width:2rem; margin-block-start:0.5rem}
 
     
-.card{padding-block:1.4rem 1.4rem; padding-inline:1.4rem 1.4rem}
+.card{padding-block:1.4rem 1.4rem; padding-inline:1.4rem 1.4rem; width: 22rem;}
 
 .card .publish-date{margin-block: 1rem 1rem;}
 
