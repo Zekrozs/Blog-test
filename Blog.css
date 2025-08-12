@@ -27,7 +27,7 @@ body{
 :root{--yellow: hsl(47, 88%, 63%);
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 42%);
-    --dark-grey: hsl(0, 0%, 7%)
+    --dark-grey: hsl(0, 0%, 7%);
 }
 
 
@@ -44,7 +44,7 @@ body{
   object-fit: cover;
   border-radius: 0.6rem;
   display: block;
-  width: 100%;
+
 
 }
 
@@ -54,7 +54,7 @@ body{
 .card .tag{background-color: var(--yellow); 
     display: inline-block; border-radius: 0.2rem; 
   width: 5rem;
-  margin-block-start: 1.3rem; 
+  margin-block-start: clamp(0.7rem, 2vw, 1rem); 
    
 }
 
@@ -83,9 +83,9 @@ body{
 .card{background-color: var(--white);
 padding-inline: 1.2rem ;
 padding-block: 1.2rem 0.1rem ;
-max-width: 21rem;
-
-border-radius: 1rem; border: solid 0.1rem black;
+width: 100%;
+width: min(90vw,21rem);
+border-radius: 1.1rem; border: solid 0.1rem black;
 box-shadow: 0.7rem 0.7rem }
 
 
