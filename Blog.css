@@ -86,7 +86,7 @@ body{
 .card{background-color: var(--white);
 padding-inline: 1.5rem ;
 padding-block: 1.5rem 0.1rem ;
-max-width: 27rem;
+max-width: 29rem;
 
 border-radius: 1.6rem; border: solid 0.1rem black;
 box-shadow: 0.7rem 0.7rem }
